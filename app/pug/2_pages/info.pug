@@ -1,0 +1,49 @@
+extends ../0_base/template
+
+block title
+	title Information
+
+block content
+	.block
+		.l-wrapper
+			.block_header: h1.block_title Контактная информация
+
+			.block_row
+				.block_content
+					.info
+						.info_row
+							.info_item
+								b.info_item-title Адрес
+								span.info_item-val г. Березники, <br>ул. Юбилейная 1, 2 этаж
+							.info_item
+								b.info_item-title Режим работы
+								span.info_item-val Пн-Пт: 10:00 — 18:00 <br>Сб-Вс: выходной
+						.info_row
+							.info_item
+								b.info_item-title Регистратура
+								span.info_item-val <a href="#">+7 (3424) 20-13-30</a>
+							.info_item
+								b.info_item-title Электронная почта
+								span.info_item-val <a href="#">help@vitacentr.ru</a>
+
+					.map.__small
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3414.002115512154!2d56.79349242119666!3d59.41676521325686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43edd15cce808663%3A0xc2a7d8dd3cfe336!2z0JLQuNGC0LA!5e0!3m2!1sru!2sru!4v1545318669387" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+
+				.block_aside.__w-50p
+					form(action="#" method="post").form
+						h3.form_title Обратная связь
+
+						.form_field-wrap
+							label(for="person-name").form_field-label Фамилия Имя
+							input(type="text" name="person-name" id="person-name" placeholder="Как к вам обращаться?").form_text-field
+
+						.form_field-wrap
+							label(for="person-email").form_field-label Электронная почта
+							input(type="text" name="person-email" id="person-email" placeholder="help@vitacenter.ru").form_text-field
+
+						.form_field-wrap
+							label(for="person-message").form_field-label Сообщение
+							textarea(name="message" rows="9" id="person-message" placeholder="Напишите ваше сообщение или вопрос здесь").form_text-field.__textarea
+
+						.form_actions
+							button(type="submit").btn Отправить

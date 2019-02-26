@@ -1,0 +1,8 @@
+mixin feedbackFull(author, text)
+	article.feedback-card
+		.feedback-card_header
+			b.feedback-card_author= author
+			time(datetime="2018-12-07").feedback-card_public-time
+				|07.12.2018
+				+icon("clock")
+		p.feedback-card_text= text

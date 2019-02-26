@@ -1,0 +1,96 @@
+.profile-card
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	background-color: #f9f9f9
+	color: #606470
+	border-radius: 10px
+	padding: 20px
+	align-items: center
+	margin-bottom: 30px
+
+.profile-card_pic
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	overflow: hidden
+	width: 155px
+	height: 155px
+	border-radius: 50%
+	background-color: #fff
+	margin-right: 20px
+
+.profile-card_content
+	flex-grow: 1
+	flex-shrink: 1
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+
+.profile-card_name
+	font-size: 1.5rem
+	color: #606470
+	font-weight: 400
+	margin: 0
+	padding-bottom: 12px
+	margin-bottom: 8px
+	position: relative
+
+	&::after
+		content: ""
+		display: block
+		width: 150px
+		height: 1px
+		background-color: #606470
+		position: absolute
+		left: 0
+		bottom: 0
+		opacity: .2
+
+	b
+		font-weight: 700
+		color: #323643
+
+.profile-card_specialty
+	margin: 0 0 20px
+
+.profile-card_info
+	list-style: none
+	padding: 0
+	margin: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-start
+
+.profile-card_info-item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	margin-right: 30px
+
+	&:last-child
+		margin-right: 0
+
+.profile-card_info-name
+	font-size: .875rem
+	line-height: 1
+	display: block
+	margin-bottom: 6px
+
+.profile-card_info-val
+	color: #323643

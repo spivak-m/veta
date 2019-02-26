@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/libs/owl.themes.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="l-wrapper site-header_first">
+        <div class="site-header_logo"></div>
+        <ul class="site-header_info">
+          <li class="site-header_info-item">
+              <svg class="icon icon-map ">
+                <use xlink:href="media/img/sprite.svg#map"></use>
+              </svg>
+            <div class="site-header_info-container"><span class="site-header_info-txt __small">г. Березники</span><span class="site-header_info-txt">ул. Юбилейная 1</span></div>
+          </li>
+          <li class="site-header_info-item">
+              <svg class="icon icon-mobile ">
+                <use xlink:href="media/img/sprite.svg#mobile"></use>
+              </svg>
+            <div class="site-header_info-container"><span class="site-header_info-txt __small">Регистратура</span><a class="site-header_info-txt" href="#">+7 (3424) 20-13-30</a></div>
+          </li>
+        </ul>
+        <div class="site-header_actions"><a class="btn __small __ghost mopen" href="#order-call">Записаться</a></div>
+      </div>
+      <div class="site-header_second">
+        <div class="l-wrapper site-header_row">
+          <div class="site-header_nav">
+            <nav class="site-nav">
+              <ul class="site-nav_list">
+                <li class="site-nav_item"><a class="site-nav_link" href="#">Главная</a></li>
+                <li class="site-nav_item"><a class="site-nav_link" href="#">О клинике</a></li>
+                <li class="site-nav_item"><a class="site-nav_link" href="#">Услуги</a></li>
+                <li class="site-nav_item"><a class="site-nav_link" href="#">Часы приема</a></li>
+                <li class="site-nav_item"><a class="site-nav_link" href="#">Отзывы</a></li>
+                <li class="site-nav_item"><a class="site-nav_link" href="#">Дополнительно</a></li>
+                <li class="site-nav_item"><a class="site-nav_link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="site-header_search">
+            <form class="search js-search" action="#" method="get">
+              <input class="search_field" type="text" name="search"/>
+              <button class="search_btn" type="submit">
+                  <svg class="icon icon-search ">
+                    <use xlink:href="media/img/sprite.svg#search"></use>
+                  </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="block">
+        <div class="l-wrapper">
+          <div class="block_header">
+            <h1 class="block_title">Контактная информация</h1>
+          </div>
+          <div class="block_row">
+            <div class="block_content">
+              <div class="info">
+                <div class="info_row">
+                  <div class="info_item"><b class="info_item-title">Адрес</b><span class="info_item-val">г. Березники, <br>ул. Юбилейная 1, 2 этаж</span></div>
+                  <div class="info_item"><b class="info_item-title">Режим работы</b><span class="info_item-val">Пн-Пт: 10:00 — 18:00 <br>Сб-Вс: выходной</span></div>
+                </div>
+                <div class="info_row">
+                  <div class="info_item"><b class="info_item-title">Регистратура</b><span class="info_item-val"><a href="#">+7 (3424) 20-13-30</a></span></div>
+                  <div class="info_item"><b class="info_item-title">Электронная почта</b><span class="info_item-val"><a href="#">help@vitacentr.ru</a></span></div>
+                </div>
+              </div>
+              <div class="map __small">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3414.002115512154!2d56.79349242119666!3d59.41676521325686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43edd15cce808663%3A0xc2a7d8dd3cfe336!2z0JLQuNGC0LA!5e0!3m2!1sru!2sru!4v1545318669387" width="600" height="450" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </div>
+            <div class="block_aside __w-50p">
+              <form class="form" action="#" method="post">
+                <h3 class="form_title">Обратная связь</h3>
+                <div class="form_field-wrap">
+                  <label class="form_field-label" for="person-name">Фамилия Имя</label>
+                  <input class="form_text-field" type="text" name="person-name" id="person-name" placeholder="Как к вам обращаться?"/>
+                </div>
+                <div class="form_field-wrap">
+                  <label class="form_field-label" for="person-email">Электронная почта</label>
+                  <input class="form_text-field" type="text" name="person-email" id="person-email" placeholder="help@vitacenter.ru"/>
+                </div>
+                <div class="form_field-wrap">
+                  <label class="form_field-label" for="person-message">Сообщение</label>
+                  <textarea class="form_text-field __textarea" name="message" rows="9" id="person-message" placeholder="Напишите ваше сообщение или вопрос здесь"></textarea>
+                </div>
+                <div class="form_actions">
+                  <button class="btn" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-foo">
+      <div class="l-wrapper site-foo_row">
+        <div class="site-foo_info"><a class="site-foo_logo" href="#"></a>
+          <p class="site-foo_copyright">
+            © Медицинский центр «ВИТА», 2010 — 2018. Имеются 
+            противопоказания, необходима консультация 
+            специалиста. Разработка сайта <a href="#">prostor.design</a>
+          </p>
+        </div>
+        <nav class="site-foo_nav">
+          <ul class="site-foo_nav-list">
+            <li class="site-foo_nav-item __title"><a class="site-foo_nav-link">О нас</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Клиника</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Часы приема</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Отзывы</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Дополнительно</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Контакты</a></li>
+          </ul>
+          <ul class="site-foo_nav-list">
+            <li class="site-foo_nav-item __title"><a class="site-foo_nav-link">Для пациентов</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Специалисты</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Услуги</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Акции</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Лицензия</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Документы</a></li>
+          </ul>
+          <ul class="site-foo_nav-list">
+            <li class="site-foo_nav-item __title"><a class="site-foo_nav-link">Контакты</a></li>
+            <li class="site-foo_nav-item __with-ic">
+              <div class="site-foo_nav-icon">
+                  <svg class="icon icon-mapmin ">
+                    <use xlink:href="media/img/sprite.svg#mapmin"></use>
+                  </svg>
+              </div><a class="site-foo_nav-link">г. Березники, ул. Юбилейная 1, 2 этаж</a>
+            </li>
+            <li class="site-foo_nav-item __with-ic">
+              <div class="site-foo_nav-icon">
+                  <svg class="icon icon-mobilemin ">
+                    <use xlink:href="media/img/sprite.svg#mobilemin"></use>
+                  </svg>
+              </div><a class="site-foo_nav-link" href="#">+7 (3424) 20-13-30</a>
+            </li>
+            <li class="site-foo_nav-item __with-ic">
+              <div class="site-foo_nav-icon">
+                  <svg class="icon icon-atmin ">
+                    <use xlink:href="media/img/sprite.svg#atmin"></use>
+                  </svg>
+              </div><a class="site-foo_nav-link" href="#">help@vitacenter.ru</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal_container" id="order-call">
+        <div class="modal_content">
+          <form class="form __at-modal" action="#" method="post">
+            <h3 class="form_title">Всплывающее окно</h3>
+            <p class="form_text">
+              Супер маленький дескриптор для 
+              всплывающего окна. Ознакомьтесь с 
+              информаций ниже и наши специалисты 
+              конечно же свяжутся с вами.
+              
+            </p>
+            <div class="form_field-wrap">
+              <label class="form_field-label" for="order-call-name">ФИО</label>
+              <input class="form_text-field" type="text" name="name" id="order-call-name" placeholder="Как к вам обращаться?"/>
+            </div>
+            <div class="form_field-wrap">
+              <label class="form_field-label" for="order-call-tel">Телефон</label>
+              <input class="form_text-field" type="tel" name="tel" id="order-call-tel" placeholder="+7 ___-___-__-__"/>
+            </div>
+            <div class="form_field-wrap">
+              <label class="form_field-label" for="order-call-time">Удобное время</label>
+              <input class="form_text-field" type="text" name="time" id="order-call-time" placeholder="Как к вам обращаться?"/>
+            </div>
+            <div class="form_actions">
+              <button class="btn" type="submit">Подать заявку</button>
+            </div>
+          </form>
+        </div><a class="modal_close" href="#"></a>
+      </div>
+      <div class="modal_overlay"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/libs/modal.js"></script>
+    <script src="js/script.js"></script>
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+      <linearGradient id="gradient" x2="0" y2="1">
+        <stop offset="0%" stop-color="#0072ff"></stop>
+        <stop offset="77%" stop-color="#00c6ff"></stop>
+      </linearGradient>
+    </svg>
+  </body>
+</html>

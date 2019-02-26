@@ -1,0 +1,182 @@
+.form
+	width: 100%
+	border-radius: 10px
+	padding: 30px
+	background-color: #f9f9f9
+	
+	&.__p-20
+		padding: 20px
+
+	&.__at-modal
+		padding: 0
+		background-color: #fff
+
+		.form_title
+			margin-bottom: 10px
+
+.form_title
+	margin: 0
+	margin-bottom: 30px
+	color: #323643
+
+.form_field-wrap
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	margin-bottom: 19px
+
+	&:last-child
+		margin-bottom: 0
+
+.form_field-label
+	display: block
+	font-size: .875rem
+	line-height: 1
+	color: #606470
+	font-weight: 700
+	margin-bottom: 6px
+
+.form_text-field
+	width: 100%
+	height: 40px
+	padding: 10px
+	border: 1px solid rgba(50, 54, 67, 0.3)
+	border-radius: 5px
+	font-size: .875rem
+	line-height: 1
+	color: #606470
+	font-weight: 400
+	outline: none
+
+	&.__textarea
+		height: initial
+
+.form_select
+	width: 100%
+	font-size: .875rem
+	line-height: 1
+	color: #606470
+	font-weight: 400
+	background-color: #fff
+	border: 1px solid rgba(50, 54, 67, 0.3)
+	border-radius: 5px
+	position: relative
+
+	&.__is-open
+		.form_select-current::before
+			transform: rotate(-135deg)
+			margin-top: 0
+
+		.form_select-list
+			transform: scaleY(1)
+			visibility: visible
+
+.form_select-current
+	padding-left: 10px
+	padding-right: 25px
+	position: relative
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	height: 40px
+	width: 100%
+	cursor: pointer
+
+	&::before
+		content: ""
+		display: block
+		width: 10px
+		height: 10px
+		position: absolute
+		top: 50%
+		margin-top: -7px
+		right: 10px
+		border-right: 1px solid #323643
+		border-bottom: 1px solid #323643
+		transform: rotate(45deg)
+
+.form_select-list
+	list-style: none
+	margin: 0
+	padding: 0
+	position: absolute
+	top: 35px
+	left: 0
+	right: 0
+	margin-right: -1px
+	margin-left: -1px
+	padding-top: 15px
+	background-color: #fff
+	border: 1px solid rgba(50, 54, 67, 0.3)
+	border-top: none
+	border-radius: 0 0 5px 5px
+	transform: scaleY(0)
+	transform-origin: 0 0
+	visibility: hidden
+	transition: transform .2s
+	overflow: hidden
+	z-index: 5
+
+.form_select-val
+	width: 100%
+	cursor: pointer
+	padding: 10px
+
+	&:last-child
+		margin-bottom: 0
+
+	&:hover
+		background-color: #f9f9f9
+
+.form_actions
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	
+	&.__btn-fw .btn
+		width: 100%
+
+.form_break-line
+	display: block
+	width: 100%
+	text-align: center
+	font-size: .875rem
+	color: #606470
+	line-height: 1
+	position: relative
+	background-color: inherit
+	margin-bottom: 20px
+	
+	&::before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		height: 1px
+		background-color: #606470
+		opacity: .4
+
+	span
+		line-height: 1
+		background-color: inherit
+		z-index: 2
+		position: relative
+		padding: 0 20px
+
+.form_text
+	margin: 0
+	margin-bottom: 15px
+	font-size: .875rem
+	color: #606470

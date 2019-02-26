@@ -1,0 +1,8 @@
+mixin card(title, text, ic)
+	article.card
+		a(href="#").card_link-wrap
+			.card_icon: +icon(ic)
+			.card_content
+				b.card_title #{title}
+				p.card_text #{text}
+				span.card_more Подробнее

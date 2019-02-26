@@ -1,0 +1,42 @@
+.carousel-banner
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	justify-content: center
+	padding: 40px
+	height: 406px
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	color: #606470
+	position: relative
+
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background-image: linear-gradient(to top, #f7f7f7, rgba(255, 255, 255, 0))
+
+.carousel-banner_content
+	position: relative
+	z-index: 3
+
+.carousel-banner_title
+	font-size: 2.25rem
+	line-height: 1
+	color: #323643
+	font-weight: 700
+	margin-bottom: 20px
+
+.carousel-banner_text
+	width: 430px
+	font-size: 1.125rem
+	margin: 0
+	margin-bottom: 40px

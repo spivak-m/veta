@@ -1,0 +1,72 @@
+.map
+	width: 100%
+	height: 450px
+	background: #c4c4c4 url("../media/img/map.jpg") no-repeat 50% 50%
+
+	&.__small
+		height: 320px
+
+	iframe
+		width: 100%
+		height: 100%
+
+.map_container
+	position: relative
+
+.map_block
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	width: 353px
+	height: 333px
+	padding: 30px
+	position: absolute
+	top: 50px
+	background-color: #fff
+	border-radius: 10px
+	box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16)
+
+.map_title
+	display: block
+	font-size: 1.5rem
+	line-height: 1
+	font-weight: 700
+	color: #323643
+	margin-bottom: 20px
+
+.map_info
+	list-style: none
+	margin: 0
+	margin-top: auto
+	padding: 0
+
+.map_info-item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	margin-bottom: 25px
+
+	&:last-child
+		margin-bottom: 0
+
+	a:hover
+		opacity: .8
+
+.map_info-title
+	font-size: .875rem
+	line-height: 1
+	color: #606470
+	display: block
+	margin-bottom: 8px
+
+.map_info-text
+	margin: 0
+	padding: 0
+	text-decoration: none
+	color: #323643

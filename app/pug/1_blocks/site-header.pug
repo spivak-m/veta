@@ -1,0 +1,28 @@
+header.site-header
+	.l-wrapper.site-header_first
+		.site-header_logo
+
+		ul.site-header_info
+			li.site-header_info-item
+				+icon("map")
+				.site-header_info-container
+					span.site-header_info-txt.__small г. Березники
+					span.site-header_info-txt ул. Юбилейная 1
+			li.site-header_info-item
+				+icon("mobile")
+				.site-header_info-container
+					span.site-header_info-txt.__small Регистратура
+					a(href="#").site-header_info-txt +7 (3424) 20-13-30
+
+		.site-header_actions
+			a(href="#order-call").btn.__small.__ghost.mopen Записаться
+
+	.site-header_second
+		.l-wrapper.site-header_row
+			.site-header_nav
+				include site-nav
+
+			.site-header_search
+				form(action="#" method="get").search.js-search
+					input(type="text" name="search").search_field
+					button(type="submit").search_btn: +icon("search")

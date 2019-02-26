@@ -1,0 +1,227 @@
+extends ../0_base/template
+
+block title
+	title Home page
+
+block content
+	.block
+		.l-wrapper.block_row
+			.block_content
+				.index-carousel.owl-carousel.owl-banner-theme.js-index-carousel
+					.carousel-banner(style="background-image: url(media/img-p/doc.jpg);")
+						.carousel-banner_content
+							b.carousel-banner_title Бесплатная консультация
+							p.carousel-banner_text.
+								Наши высокопрофильные специалисты не оставят 
+								вас в трудную минуту, обратитесь к нам уже сегодня. 
+								Получите бесплатную консультацию врача
+							a(href="#").btn.__ghost Подробнее
+
+					.carousel-banner(style="background-image: url(media/img-p/doc.jpg);")
+						.carousel-banner_content
+							b.carousel-banner_title Бесплатная консультация
+							p.carousel-banner_text.
+								Наши высокопрофильные специалисты не оставят 
+								вас в трудную минуту, обратитесь к нам уже сегодня. 
+								Получите бесплатную консультацию врача
+							a(href="#").btn.__ghost Подробнее
+
+					.carousel-banner(style="background-image: url(media/img-p/doc.jpg);")
+						.carousel-banner_content
+							b.carousel-banner_title Бесплатная консультация
+							p.carousel-banner_text.
+								Наши высокопрофильные специалисты не оставят 
+								вас в трудную минуту, обратитесь к нам уже сегодня. 
+								Получите бесплатную консультацию врача
+							a(href="#").btn.__ghost Подробнее
+
+					.carousel-banner(style="background-image: url(media/img-p/doc.jpg);")
+						.carousel-banner_content
+							b.carousel-banner_title Бесплатная консультация
+							p.carousel-banner_text.
+								Наши высокопрофильные специалисты не оставят 
+								вас в трудную минуту, обратитесь к нам уже сегодня. 
+								Получите бесплатную консультацию врача
+							a(href="#").btn.__ghost Подробнее
+
+				.promo-banner
+					.promo-banner_icon: +icon("ticket")
+					b.promo-banner_title Спецпредложения для предприятий
+					p.promo-banner_text Проводим акции и предоставляем скидки
+
+			.block_aside
+				form(action="#" method="post").form.__p-20
+					h3.form_title Онлайн-запись
+					
+					.form_field-wrap
+						span.form_field-label Специалист
+						.form_select
+							input(type="hidden" name="doctor" value="").form_select-input
+							span.form_select-current Выберите специалиста
+							ul.form_select-list
+								li.form_select-val(data-val="doc-1") Хирург
+								li.form_select-val(data-val="doc-2") Лор
+								li.form_select-val(data-val="doc-3") Терапевт
+
+					.form_break-line: span или
+
+					.form_field-wrap
+						span.form_field-label Услуга
+						.form_select
+							input(type="hidden" name="service" value="").form_select-input
+							span.form_select-current Название услуги
+							ul.form_select-list
+								li.form_select-val(data-val="service-1") Хирург
+								li.form_select-val(data-val="service-2") Лор
+								li.form_select-val(data-val="service-3") Терапевт
+
+					.form_field-wrap
+						label(for="patient-name").form_field-label ФИО
+						input(type="text" name="name" id="patient-name" placeholder="Фамилия Имя Отчество").form_text-field
+
+					.form_field-wrap
+						label(for="patient-tel").form_field-label Телефон
+						input(type="tel" name="tel" id="patient-tel" placeholder="+7 ___-__-__").form_text-field
+
+					.form_field-wrap
+						label(for="patient-time").form_field-label Удобное время
+						input(type="text" name="time" id="patient-time" placeholder="На какое время вас записать?").form_text-field
+					
+					.form_actions.__btn-fw
+						button(type="submit").btn Записаться
+
+	.block
+		.l-wrapper
+			.block_header
+				h2.like-h1.block_title Наши специалисты
+
+			.block_content
+				.cards
+					.cards_row
+						.cards_item: +card(
+							"Уролог",
+							"Лечит проблемы мочевого пузыря, мочеиспускательного канала, почек, наружных половых органов, предстательной железы",
+							"stomach")
+						.cards_item: +card(
+							"Кардиолог",
+							"Специалист по лечению и профилактике заболеваний сердечно-сосудистой системы",
+							"heart")
+						.cards_item: +card(
+							"Лор",
+							"Лечит проблемы мочевого пузыря, мочеиспускательного канала, почек, наружных половых органов, предстательной железы",
+							"ear")
+					.cards_row
+						.cards_item: +card(
+							"Педиатр",
+							"Лечит детей и является специалистом в определении детских болезней от рождения до 16-ти лет",
+							"stethoscope")
+						.cards_item: +card(
+							"Психотерапевт",
+							"Занимается лечением заболеваний психики, соответствующих легкой или средней тяжести проявления",
+							"braille")
+						.cards_item: +card(
+							"Невропатолог",
+							"Лечит заболевания центральной (головной и спинной мозг) и периферической нервной системы (нервные волокна)",
+							"brain")
+					.cards_row
+						.cards_item: +card(
+							"Хирург",
+							"Изучение заболевания и повреждений, для которых применяются оперативные методы, нарушающие целостность тканей",
+							"scalpel-path")
+						.cards_item: +card(
+							"Гинеколог",
+							"Занимается диагностикой, лечением и профилактикой заболеваний женской репродуктивной системы",
+							"venus")
+						.cards_item: +card(
+							"Проктолог",
+							"Занимается изучением болезней толстой кишки (прямой и ободочной), заднего прохода и аноректальной области",
+							"band-aid")
+					.cards_row
+						.cards_item: +card(
+							"Хирург-онколог",
+							"Уделяет большое внимание лучевым методам обнаружения злокачественных опухолей, а также УЗИ",
+							"star-of-life")
+	.block
+		.l-wrapper
+			.block_header
+				h2.like-h1.block_title Процедуры
+
+			.block_content
+				.cards
+					.cards_row
+						.cards_item: +card(
+							"Флюрография",
+							"Лечит проблемы мочевого пузыря, мочеиспускательного канала, почек, наружных половых органов, предстательной железы",
+							"lungs")
+						.cards_item: +card(
+							"ЭКГ",
+							"Лечит проблемы мочевого пузыря, мочеиспускательного канала, почек, наружных половых органов, предстательной железы",
+							"heartbeat")
+						.cards_item: +card(
+							"Все виды анализов",
+							"Лечит проблемы мочевого пузыря, мочеиспускательного канала, почек, наружных половых органов, предстательной железы",
+							"microscope")
+	.about
+		.l-wrapper.about_content
+			h2.about_title.like-h2.
+				Добро пожаловать
+				в медицинский центр «Вита»
+			p.about_text.
+				Специалисты ООО «Медико-санитарной части Сода» ведут приём 
+				по полису ОМС и оказывают все бесплатные услуги, которые входят 
+				в перечень, утвержденный Территориальной программой оказания 
+				бесплатных медицинских услуг. В рамках платных медицинских услуг 
+				можно получить консультации специалистов, лабораторные, 
+				диагностические, лечебные и прочие виды услуг.
+			ul.about_licenses
+				li.about_license: img(src="media/img-p/license.jpg", alt="")
+				li.about_license: img(src="media/img-p/license.jpg", alt="")
+				li.about_license: img(src="media/img-p/license.jpg", alt="")
+				li.about_license: img(src="media/img-p/license.jpg", alt="")
+
+	.block
+		.l-wrapper
+			.block_header
+				h2.like-h1.block_title Отзывы
+
+			.block_content
+				.feebback-slider
+					.feedback-slider_container.owl-carousel.owl-feedback-theme.js-feedback-carousel
+						+feedback(
+							"Валерий Крылов",
+							"Делала лабиопластику у доктора Корявой Татьяны Фёдоровны, все понравилось, результатом я осталась очень довольна. Были сомнения по поводу анестезии , я не терплю боли, оказалось , что мои опасения бессмысленны. Татьяна Фёдоровна, спасибо Вам огромное за профессионализм , прекрасные человеческие качества!")
+						+feedback(
+							"Евгения Миронова",
+							"Очень довольна после посещения этого доктора. Всегда боялась удаления. Но все мои страхи были напрасны. Удаляла разрушенный зуб. Было совсем не больно и очень быстро. Профессиональный стоматолог-хирург. Большое спасибо! Советую этого доктора.")
+						+feedback(
+							"Елена Малышева",
+							"Делала лабиопластику у доктора Корявой Татьяны Фёдоровны, все понравилось, результатом я осталась очень довольна. Были сомнения по поводу анестезии , я не терплю боли, оказалось , что мои опасения бессмысленны. Татьяна Фёдоровна, спасибо Вам огромное за профессионализм , прекрасные человеческие качества!")
+						+feedback(
+							"Доктор Попов",
+							"Очень довольна после посещения этого доктора. Всегда боялась удаления. Но все мои страхи были напрасны. Удаляла разрушенный зуб. Было совсем не больно и очень быстро. Профессиональный стоматолог-хирург. Большое спасибо! Советую этого доктора.")
+					.feedback-slider_actions
+						a(href="#").btn.__ghost Все отзывы
+	.map
+		.map_container.l-wrapper
+			.map_block
+				b.map_title Контактная информация
+				ul.map_info
+					li.map_info-item
+						span.map_info-title.
+							Адрес
+						p.map_info-text.
+							г. Березники,<br>
+							ул. Юбилейная,1 (2 этаж)
+					li.map_info-item
+						span.map_info-title.
+							Время работы
+						p.map_info-text.
+							Пн-Пт: 10:00 — 18:00<br>
+							Сб-Вс: выходной
+					li.map_info-item
+						span.map_info-title.
+							Телефон
+						a(href="#").map_info-text.
+							+7 (3424) 20-13-30
+
+		iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3414.002115512154!2d56.79349242119666!3d59.41676521325686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43edd15cce808663%3A0xc2a7d8dd3cfe336!2z0JLQuNGC0LA!5e0!3m2!1sru!2sru!4v1545318669387" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)

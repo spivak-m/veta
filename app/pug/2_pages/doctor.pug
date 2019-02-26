@@ -1,0 +1,111 @@
+extends ../0_base/template
+
+block title
+	title Doctor
+
+block content
+	.block
+		.l-wrapper
+			.block_header: h1.block_title.like-h1 Кардиолог
+
+			.block_row
+				.block_content
+					section.profile
+						.profile_block
+							article.profile-card
+								.profile-card_pic
+								.profile-card_content
+									h2.profile-card_name <b>Миронов</b><br> Сергей Викторович
+									p.profile-card_specialty Кардиолог, терапевт
+									ul.profile-card_info
+										li.profile-card_info-item
+											b.profile-card_info-name Категория
+											span.profile-card_info-val Высшая
+										li.profile-card_info-item
+											b.profile-card_info-name Опыт работы
+											span.profile-card_info-val 14 лет
+										li.profile-card_info-item
+											b.profile-card_info-name Научная степень
+											span.profile-card_info-val Кандидат медицинских наук
+
+							p.
+								Врач-акушер-гинеколог первой категории, врач-эндоскопист, член Общероссийского общества 
+								репродуктивной медицины и хирургии, член Российского общества акушеров-гинекологов, автор 
+								более 20-ти печатных работ, сертификат по специальности «Акушерство и гинекология», 
+								«Эндоскопия».
+
+						.profile_block
+							h2.profile_block-title Образование
+
+							.profile_masonry
+								.profile_masonry-row
+									.profile_masonry-cell: .profile_rezum-card
+										b.profile_rezum-card-title 1992 — 1998
+										p.profile_rezum-card-text ПМГА, терапия
+									.profile_masonry-cell: .profile_rezum-card
+										b.profile_rezum-card-title 1998 — 2000
+										p.profile_rezum-card-text ПГМА, терапия
+									.profile_masonry-cell: .profile_rezum-card
+										b.profile_rezum-card-title 2001
+										p.profile_rezum-card-text ПМГА, кардиология
+
+						.profile_block
+							h2.profile_block-title Опыт работы
+
+							.profile_masonry
+								.profile_masonry-row
+									.profile_masonry-cell: .profile_rezum-card
+										b.profile_rezum-card-title 2012 — н.в.
+										p.profile_rezum-card-text Медицинский центр «ВИТА», врач кардиолог
+									.profile_masonry-cell: .profile_rezum-card
+										b.profile_rezum-card-title 2010 — 2012
+										p.profile_rezum-card-text НУЗ Линейная поликлиника ОАО "РЖД"на ст. Березники
+									.profile_masonry-cell: .profile_rezum-card
+										b.profile_rezum-card-title 1983 — 2010
+										p.profile_rezum-card-text Муз Городская больница №2, врач терапевт участковый
+								.profile_masonry-row
+									.profile_masonry-cell: .profile_rezum-card
+										b.profile_rezum-card-title 1979 — 1983
+										p.profile_rezum-card-text 2-я Областная больница, врач терапевт скорой помощи
+
+
+				.block_aside
+					form(action="#" method="post").form.__p-20
+						h3.form_title.like-h3 Онлайн-запись
+						
+						.form_field-wrap
+							span.form_field-label Специалист
+							.form_select
+								input(type="hidden" name="doctor" value="").form_select-input
+								span.form_select-current Выберите специалиста
+								ul.form_select-list
+									li.form_select-val(data-val="doc-1") Хирург
+									li.form_select-val(data-val="doc-2") Лор
+									li.form_select-val(data-val="doc-3") Терапевт
+
+						.form_break-line: span или
+
+						.form_field-wrap
+							span.form_field-label Услуга
+							.form_select
+								input(type="hidden" name="service" value="").form_select-input
+								span.form_select-current Название услуги
+								ul.form_select-list
+									li.form_select-val(data-val="service-1") Хирург
+									li.form_select-val(data-val="service-2") Лор
+									li.form_select-val(data-val="service-3") Терапевт
+
+						.form_field-wrap
+							label(for="patient-name").form_field-label ФИО
+							input(type="text" name="name" id="patient-name" placeholder="Фамилия Имя Отчество").form_text-field
+
+						.form_field-wrap
+							label(for="patient-name").form_field-label Телефон
+							input(type="text" name="name" id="patient-name" placeholder="+7 ___-__-__").form_text-field
+
+						.form_field-wrap
+							label(for="patient-name").form_field-label Удобное время
+							input(type="text" name="name" id="patient-name" placeholder="На какое время вас записать?").form_text-field
+						
+						.form_actions.__btn-fw
+							button(type="submit").btn Записаться
